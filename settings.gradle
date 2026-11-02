@@ -2,4 +2,4 @@ rootProject.name = "TVBox"
 include ':app'
 include ':player'
 include ':quickjs'
-include ':pyramid'
+// include ':pyramid'  // 需要本机 Python 3.8 + Chaquo，CI 上禁用

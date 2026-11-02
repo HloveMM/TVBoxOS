@@ -13,6 +13,8 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v3
+      - name: Prepare local.properties
+        run: echo "sdk.dir=$ANDROID_HOME" > local.properties
       - name: Build APK
         run: |
           chmod +x gradlew
